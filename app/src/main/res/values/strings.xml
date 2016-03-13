@@ -1,0 +1,43 @@
+<resources >
+    <string name="app_name">Tellit</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="im_please_confirm">Please confirm you country code and enter your phone number</string>
+    <string name="im_done">Done</string>
+    <string name="im_verifying">verifying</string>
+    <string name="im_we_have_sms">We have sent you an SMS with a code to the number above</string>
+    <string name="im_6_digit">To complete you phone number verification, please enter the 6-digit activation code</string>
+    <string name="im_code_correct">Your code is correct\nEnjoy Tellit!</string>
+    <string name="im_continue">Continue</string>
+    <string name="im_enter_first">Enter your First Name, Last Name and add optional profile picture</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string-array
+        name="im_country_array">
+        <item>United States</item>
+        <item>Ukraine</item>
+    </string-array>
+    <string name="main_empty_list">There is no recent conversation, write new message
+		to start one.</string>
+    <string name="gcm_defaultSenderId">887168412083</string>
+    <string name="title_activity_tellit_test">TellitTest</string>
+
+    <string name="myDateFormat_seconds">%1$s sec ago</string>
+    <string name="myDateFormat_min">%1$s min ago</string>
+    <string name="myDateFormat_hour">%1$s hours ago</string>
+    <string name="myDateFormat_days">%1$s days ago</string>
+    <string name="myDateFormat_weeks">%1$s weeks ago</string>
+    <string name="myDateFormat_month">%1$s month ago</string>
+    <string name="myDateFormat_years">%1$s years ago</string>
+
+    <string name="myDateFormat_yesterday">\'yesterday at\' HH:mm</string>
+    <string name="myDateFormat_inTheWeek">EEEE \'at\' HH:mm</string>
+    <string name="myDateFormat_thisYear">d MMM \'at\' HH:mm</string>
+    <string name="myDateFormat_lastYear">d MMM yyyy \'at\' HH:mm</string>
+
+    <string name="abc_chat_copy">Copy</string>
+
+    <string name="review_rate_name">Set rating for %1$s from 1 to 5 stars</string>
+    <string name="review_comment">Tell what you think about %1$s</string>
+
+</resources>

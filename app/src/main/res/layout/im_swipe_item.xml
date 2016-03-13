@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/listViewBg">
+    <LinearLayout
+        android:tag="Bottom2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/im_swipe_item_favor"
+            android:src="@android:drawable/ic_menu_preferences"
+            android:layout_width="70dp"
+            android:background="#f7e79c"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/im_swipe_item_star"
+            android:src="@android:drawable/star_big_off"
+            android:layout_width="70dp"
+            android:background="#4cd964"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <include layout="@layout/item_contacts"/>
+
+</com.daimajia.swipe.SwipeLayout>

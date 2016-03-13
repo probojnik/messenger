@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/listViewBg"
+    android:orientation="vertical"
+    android:id="@+id/parent_layout">
+
+    <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+        android:id="@+id/im_simple_chat_list_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:direction="bottom"
+
+
+        android:layout_above="@+id/bottom_write_bar"
+        android:layout_below="@+id/im_review">
+
+        <ListView
+            android:id="@+id/im_simple_chat_list"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_above="@id/bottom_write_bar"
+            android:layout_alignParentTop="true"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:listSelector="#00000000" >
+
+        </ListView>
+    </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/speech_bubble_blue"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+
+        android:id="@+id/im_review"
+        android:baselineAligned="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/im_review_text"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_write_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/message_bar">
+
+        <EditText
+            android:id="@+id/im_simple_chat_edt"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:background="@drawable/message_field"
+            android:hint="Write here"
+            android:padding="5sp"
+            android:textColor="@color/textFieldColor" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5sp"
+            android:background="@drawable/send_button"
+            android:paddingBottom="5sp"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:paddingTop="5sp"
+            android:text="Send"
+            android:textColor="#FFF"
+            android:id="@+id/im_simple_chat_btn" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom_write_bar"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/main_empty_list"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_write_bar"
+        android:background="#55555555"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/im_simple_chat_status_txt"
+            android:textColor="#fff"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tellit="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_copy"
+        android:icon="@drawable/abc_ic_menu_copy_mtrl_am_alpha"
+        android:title="@string/abc_chat_copy"
+        tellit:showAsAction="always"/>
+
+</menu>

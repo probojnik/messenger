@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tellit.com.tellit">
+
+    <application>
+        <receiver android:name=".model.debug.ProfilerReceiver">
+            <intent-filter>
+                <action android:name="com.intent.action.CLEAN_CONTACTS"/>
+                <action android:name="com.intent.action.CLEAN_CHATS"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

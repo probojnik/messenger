@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="Theme.AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+                    <!-- Setting values in the default namespace affects API levels 7-13 -->
+                <!-- <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>-->
+                <!--<item name="android:buttonStyle">@style/standart_button</item>-->
+
+                <item name="buttonStyle">@style/standart_button</item>
+
+                <item name="colorPrimary">@color/sendDarkColor</item>
+                <item name="colorPrimaryDark">@color/sendLightColor</item>
+                <item name="colorAccent">@color/sendDarkColor</item>
+                <item name="android:navigationBarColor">@color/sendLightColor</item>
+
+        </style>
+</resources>

@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tellit="http://schemas.android.com/apk/res-auto"
+
+    tools:context="tellit.com.tellit.ui.fragments.chat.ReviewChat">
+
+    <item android:id="@+id/view" android:icon="@android:drawable/ic_menu_view" android:title="view" tellit:showAsAction="always">
+        <menu>
+            <group android:checkableBehavior="single" >
+                <item android:id="@+id/menu_choice_all" android:title="ALL" tellit:showAsAction="never" android:checked="true"  />
+                <item android:id="@+id/menu_choice_like" android:title="LIKE" tellit:showAsAction="never" />
+            </group>
+        </menu>
+
+    </item>
+
+</menu>

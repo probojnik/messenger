@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listViewBg"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.isseiaoki.simplecropview.CropImageView
+            android:id="@+id/cropImageView"
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:cropMode="ratio_1_1"
+            android:layout_margin="10dp"
+            android:layout_above="@+id/btns_lt"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:background="#0f0" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btns_lt">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="&lt; ROTATE"
+                android:id="@+id/rotate_buttonl"
+                android:layout_margin="10dp"
+                style="@style/standart_button"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/crop_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CROP"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                style="@style/standart_button" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="ROTATE >"
+                android:id="@+id/rotate_button"
+                android:layout_margin="10dp"
+                style="@style/standart_button"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:adjustViewBounds="true"
+            android:scaleType="center"
+            android:layout_alignTop="@+id/cropImageView"
+            android:layout_alignLeft="@+id/cropImageView"
+            android:layout_alignRight="@+id/cropImageView"
+            android:layout_alignBottom="@+id/cropImageView"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

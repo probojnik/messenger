@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Theme.AppTheme"
+    android:background="@color/listViewBg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/im_we_have_sms"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/im_6_digit"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/im_otp_d1"
+                android:maxLength="1"
+                android:gravity="center_horizontal"
+                android:imeOptions="actionNext" />
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/im_otp_d2"
+                android:maxLength="1"
+                android:gravity="center_horizontal"
+                android:imeOptions="actionNext" />
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/im_otp_d3"
+                android:maxLength="1"
+                android:gravity="center_horizontal"
+                android:imeOptions="actionNext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/im_otp_d4"
+                android:maxLength="1"
+                android:gravity="center_horizontal"
+                android:imeOptions="actionNext" />
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/im_otp_d5"
+                android:maxLength="1"
+                android:gravity="center_horizontal"
+                android:imeOptions="actionNext" />
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/im_otp_d6"
+                android:maxLength="1"
+                android:gravity="center_horizontal"
+                android:imeOptions="actionDone"
+                android:imeActionId="6" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/im_verifying"
+        android:id="@+id/im_otp_btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp" />
+</LinearLayout>
